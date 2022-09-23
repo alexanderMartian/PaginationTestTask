@@ -3,16 +3,9 @@ import PropTypes from 'prop-types'
 
 const User = ({email, firstName, lastName, avatar}) => {
   return (
-    <div style={{
-      "display": "flex",
-      "alignItems": "center",
-    }}>
-      <img style={{
-        "borderRadius": "50%",
-        "width": "70px",
-        "height": "70px"
-      }} src={avatar} alt="userAvatar"/>
-      <div style={{"marginLeft": "10px"}}>
+    <div className="userItem">
+      <img className="userImg" src={avatar} alt="userAvatar"/>
+      <div className="userInfoWrapper">
         <p>{firstName + "  " + lastName}</p>
         <p>email: {email}</p>
       </div>

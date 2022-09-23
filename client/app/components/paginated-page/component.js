@@ -23,11 +23,7 @@ const PaginatedPage = ({pageNumber}) => {
   return (
     <section>
       <h1>Pagination (Page {pageNumber})</h1>
-      <div style={{
-        "display": "grid",
-        "gridTemplateColumns": "repeat(3, 1fr)",
-        "gridGap": "10px"}}
-      >
+      <div className="usersWrapper">
         {users?.map(user => <User
           key={user.id.value + user.email + user.dob.date}
           email={user.email}

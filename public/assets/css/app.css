@@ -47,3 +47,24 @@
   ul.pagination li a:hover {
     text-decoration: underline;
   }
+
+  .usersWrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+
+  .userItem {
+  display: flex;
+  align-items: center;
+  }
+
+  .userImg {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  }
+
+  .userInfoWrapper {
+  margin-left: 10px;
+  }
